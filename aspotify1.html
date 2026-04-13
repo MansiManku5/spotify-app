@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Spotify UI Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <div class="sidebar">
+    <h2>Spotify</h2>
+    <ul>
+      <li>🏠 Home</li>
+      <li>🔍 Search</li>
+      <li>📚 Your Library</li>
+      <li>➕ Create Playlist</li>
+      <li>❤️ Liked Songs</li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+
+    <div class="topbar">
+      <div class="nav">
+        <button>❮</button>
+        <button>❯</button>
+      </div>
+
+      <div class="menu">
+        <span>Premium</span>
+        <span>Support</span>
+        <span>Download</span>
+      </div>
+    </div>
+
+    <h2>Spotify Playlist</h2>
+
+    
+    <div class="cards">
+
+      <div class="card">
+        <img src="spo.png">
+        <h4>Top Hits</h4>
+        <p>Best songs</p>
+      </div>
+
+      <div class="card">
+        <img src="spo1.png">
+        <h4>RapCaviar</h4>
+        <p>Latest rap</p>
+      </div>
+
+      <div class="card">
+        <img src="spo2.png">
+        <h4>All Out 2010s</h4>
+        <p>Top 2010 songs</p>
+      </div>
+
+      <div class="card">
+        <img src="sp">
+        <h4>Rock Classics</h4>
+        <p>Best rock music</p>
+      </div>
+
+      <div class="card">
+        <img src="spo4.png">
+        <h4>Chill Hits</h4>
+        <p>Relax music</p>
+      </div>
+
+    </div>
+
+    <!-- Focus Section -->
+    <h2>Focus</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <img src="spo5.png">
+        <h4>Peaceful Piano</h4>
+        <p>Relax music</p>
+      </div>
+
+      <div class="card">
+        <img src="spo6.png">
+        <h4>Deep Focus</h4>
+        <p>Stay focused</p>
+      </div>
+
+      <div class="card">
+        <img src="spo7.png">
+        <h4>Instrumental Study</h4>
+        <p>Study music</p>
+      </div>
+
+      <div class="card">
+        <img src="spo8.png">
+        <h4>Lo-fi Mode</h4>
+        <p>Chill beats</p>
+      </div>
+
+      <div class="card">
+        <img src="spo9.png">
+        <h4>Lo-fi Mode</h4>
+        <p>Chill beats</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #e0a1a1, #b48ea3);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  width: 90%;
+  height: 90vh;
+  background: #121212;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background: #000;
+  color: #fff;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+  cursor: pointer;
+  color: #b3b3b3;
+}
+
+.sidebar ul li:hover {
+  color: #fff;
+}
+
+/* Main */
+.main {
+  flex: 1;
+  padding: 20px;
+  color: #fff;
+  overflow-y: auto;
+}
+
+/* Topbar */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.topbar button {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.menu span {
+  margin-left: 20px;
+  cursor: pointer;
+  color: #b3b3b3;
+}
+
+.menu span:hover {
+  color: #fff;
+}
+
+
+.cards {
+  display: flex;
+  gap: 15px;
+  margin: 15px 0 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #181818;
+  padding: 10px;
+  width: 150px;
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.card:hover {
+  background: #282828;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card h4 {
+  margin-top: 10px;
+}
+
+.card p {
+  font-size: 12px;
+  color: #b3b3b3;
+}
+</style>
+</html>
